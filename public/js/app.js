@@ -5248,6 +5248,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
   \***********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+var isWindows = __webpack_require__(/*! cross-env/src/is-windows */ "./node_modules/cross-env/src/is-windows.js");
+
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 try {
@@ -10301,6 +10303,19 @@ defineJQueryPlugin(Toast);
 
 
 //# sourceMappingURL=bootstrap.esm.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/cross-env/src/is-windows.js":
+/*!**************************************************!*\
+  !*** ./node_modules/cross-env/src/is-windows.js ***!
+  \**************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
+module.exports = () =>
+  process.platform === 'win32' || /^(msys|cygwin)$/.test(process.env.OSTYPE)
 
 
 /***/ }),

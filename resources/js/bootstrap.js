@@ -1,7 +1,9 @@
+const isWindows = require('cross-env/src/is-windows');
+
 window._ = require('lodash');
 
 try {
-    require('bootstrap');
+    require('bootstrap-css');
 } catch (e) {}
 
 /**
